@@ -1,10 +1,66 @@
+html {
+  background-color: #FFF;
+}
+
+body {
+  background: linear-gradient(180deg, rgba(255,255,255,1) 40%, rgba(181,241,215,1) 100%);
+}
+
 #app {
   font-family: Avenir, Helvetica, Arial, sans-serif;
   -webkit-font-smoothing: antialiased;
   -moz-osx-font-smoothing: grayscale;
   text-align: center;
-  color: #4e0108;
-  margin-top: 60px;
+  padding-bottom: 50px;
+}
+
+
+header {
+  height: 350px;
+  background-color: #a94f4f;
+  margin-top: 0px;
+  text-align: left;
+  background-image: url('./images/draw.png');
+  background-repeat: no-repeat;
+  background-position-x: center;
+  background-position-y: 65%;
+  background-size: 20%;
+}
+
+header .title {
+  color: #FFF;
+  font-size: 4em;
+  padding-top: 25px;
+  text-align: center;
+  font-family: Cambria, Cochin, Georgia, Times, 'Times New Roman', serif;
+} 
+
+ul {
+  height: 36px;
+  background-color: #882626;
+  text-align: center;
+  margin-top: 230px;
+  border-bottom: 4px solid #690b0b;
+}
+
+ul li {
+  display: inline-block;
+  vertical-align: top;
+  padding: 10px;
+  cursor: pointer;
+  margin-left: 2px; 
+}
+
+ul li:hover {
+ background-color: #a70a0a;
+}
+
+ul li a {
+  color: #EEE;
+}
+
+li.focus {
+  background-color: #690b0b;
 }
 
 h1 {
@@ -13,18 +69,47 @@ h1 {
 }
 
 .basket {
-  text-align: left;
+  margin-top: 30px;
+}
+
+
+.fa-times-circle {
+  color: #a70a0a;
+  position: absolute;
+  top: 5px;
+  right: 5px;
+  cursor: pointer;
+}
+.items {
+  text-align: center;
 }
 
 .item {
-  padding: 10px;
-  border: 1px solid #4e0108;
+  position: relative;
+  padding: 20px 0;
+  background-color: #FFF;
+  font-size: 1.4em;
+  font-weight: bold;
+  color: #016d1c;
+  border: 4px dashed #016d1c;
   border-radius: 5px;
-  margin-top: 10px;
-  width: 50vw;
+  margin-top: 30px;
+  width: 60vw;
+  display: inline-block;
 }
 
 .christmas {
   font-size: 2em;
   color: red;
+}
+
+.form {
+  padding: 50px;
+  min-height: 300px;
+}
+
+.form input {
+  display: block;
+  width: 200px;
+  margin: 0 auto 20px auto;
 }
